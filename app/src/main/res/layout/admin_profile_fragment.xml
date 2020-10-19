@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteTextColor">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primarTextColor"
+        app:title="Profile"
+        app:titleTextColor="@color/whiteTextColor"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="5dp"
+        android:background="@color/primarTextColor"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/account_image"
+            android:layout_width="95dp"
+            android:layout_height="77dp"
+            android:background="@color/primarTextColor"
+            android:src="@mipmap/admin_profile"
+
+            />
+
+        <TextView
+            android:id="@+id/typespace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/account_image"
+            android:text="type of account "
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="22dp"
+            android:textColor="@color/whiteTextColor"
+            />
+        <TextView
+            android:id="@+id/namespace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="user name or gmail "
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:textSize="22dp"
+            android:textColor="@color/whiteTextColor"
+            />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_below="@id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        >
+
+        <TextView
+            android:id="@+id/editpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit password"
+            android:textSize="25dp"
+            android:background="@drawable/simple_border"
+            android:padding="8dp"
+            android:textColor="@color/colorblo"
+
+
+            />
+        <LinearLayout
+            android:id="@+id/editpasslayout"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter old password"
+                    android:textSize="18dp"
+                    android:padding="8dp"
+
+
+                    />
+
+                <EditText
+                    android:id="@+id/oldpass"
+                    android:layout_width="182dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/simple_border"
+                    android:hint="old password"
+                    android:layout_marginLeft="32dp"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:padding="5dp"
+                    android:inputType="textPassword"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter new password"
+                    android:textSize="18dp"
+                    android:padding="8dp"
+
+
+                    />
+
+                <EditText
+                    android:id="@+id/newpass"
+                    android:layout_width="182dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/simple_border"
+                    android:hint="new password"
+                    android:layout_marginLeft="32dp"
+                    android:gravity="center"
+                    android:inputType="textPassword"
+                    android:padding="5dp"
+
+
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Confirm new password"
+                    android:textSize="18dp"
+                    android:padding="8dp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/confpass"
+                    android:layout_width="182dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/simple_border"
+                    android:hint="confrim password"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:inputType="textPassword"
+                    android:padding="5dp"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/button"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:onClick="singin"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/primarTextColor"
+                android:text="confirm"
+                android:layout_gravity="center"
+                android:textColor="@color/whiteTextColor"
+                android:textSize="21dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/singout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/simple_border"
+            android:padding="8dp"
+            android:text="Sing out"
+            android:textSize="25dp"
+            android:textColor="@color/colorblo"
+
+
+            />
+
+        <TextView
+            android:id="@+id/contactus"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/simple_border"
+
+            android:padding="8dp"
+            android:text="Contact us "
+            android:textColor="@color/colorblo"
+            android:textSize="25dp"
+
+
+            />
+
+        <LinearLayout
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/salah"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:background="@drawable/simple_border"
+                android:text="salah.khantar22@gmail.com"/>
+
+            <TextView
+                android:id="@+id/amina"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:background="@drawable/simple_border"
+                android:text="amina.20.01.1999@gmail.com"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

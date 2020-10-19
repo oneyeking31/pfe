@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Login">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:background="@drawable/wave"
+        android:src="@drawable/log" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textColor="@color/primarTextColor"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:layout_marginLeft="140dp"/>
+
+<LinearLayout
+    android:layout_width="375dp"
+    android:layout_height="360dp"
+    android:orientation="vertical"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="13dp"
+    android:background="@drawable/edittextbackground">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="25dp"
+        android:textColor="@color/primarTextColor"
+        />
+
+    <EditText
+        android:id="@+id/email_feild"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_height="wrap_content"
+        android:layout_width="350dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/edittextbackground"
+        android:hint="example@email.com"
+        android:padding="20dp"
+        android:textColorHint="@color/colorblo"
+        android:textSize="20dp" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="25dp"
+        android:textColor="@color/primarTextColor"
+        />
+    <EditText
+        android:id="@+id/password_field"
+        android:layout_width="350dp"
+        android:layout_marginLeft="15dp"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextbackground"
+        android:hint="password"
+        android:padding="20dp"
+        android:textColorHint="@color/colorblo"
+        android:textSize="20dp" />
+    <CheckBox
+        android:id="@+id/checklogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Keep me logged in"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:buttonTint="@color/primarTextColor"
+
+        />
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/button"
+        android:layout_width="220dp"
+        android:layout_height="58dp"
+        android:onClick="singin"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/primarTextColor"
+        android:text="LOGIN"
+        android:layout_marginLeft="80dp"
+        android:textColor="@color/whiteTextColor"
+        android:textSize="21dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
+
+
+
+</LinearLayout>

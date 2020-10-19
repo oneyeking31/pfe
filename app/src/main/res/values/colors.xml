@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="register_bk_color">#11CFC5</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="primarTextColors">#00a5ff</color>
+    <color name="primarTextColor">#4285F4</color>
+    <color name="gray"> #C0C0C0</color>
+    <color name="colorAmina">#24816e</color>
+    <color name="colorblo">#2d334a</color>
+   <color name="silver">#EBECF0</color>
+    <color name="red">#FF0000</color>
+</resources>
